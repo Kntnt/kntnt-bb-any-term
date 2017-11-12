@@ -16,16 +16,15 @@
  * Domain Path:       /languages
  */
 
+namespace Kntnt\BB_Any_Term;
+
 defined( 'WPINC' ) || die;
 
-new Kntnt_BB_Any_Term( 'kntnt-bb-any-term' );
+new Plugin();
 
-class Kntnt_BB_Any_Term {
+final class Plugin {
 
-	// Plugin's namespace.
-	private $ns;
-
-	// For each public taxonomy, there is an kay/value pair, where key is the
+	// For each public taxonomy, there is an key/value pair, where key is the
 	// taxonomy's slug and key is the term id of the taxonomy's "any term".
 	private $tids = [];
 
@@ -37,11 +36,10 @@ class Kntnt_BB_Any_Term {
 	private $hide_any_term = true;
 
 	// Start here. :-)
-	public function __construct( $ns ) {
+	public function __construct() {
 
 		// Setup localization.
-		$this->ns = $ns;
-		$this->load_textdomain();
+		load_plugin_textdomain('kntnt-bb-any-term', false, 'languages');
 
 		// Make sure there is an "any term" in each public taxonomi.
 		add_action( 'init', [ $this, 'control_term_id' ] );
@@ -136,15 +134,6 @@ class Kntnt_BB_Any_Term {
 			$query->set( 'post__not_in', [ $this->pid ] );
 			$this->pid = false; // Prevents additional queries to be modified.
 		}
-	}
-
-	// Load localization.
-	private function load_textdomain() {
-		load_plugin_textdomain(
-			$this->ns,
-			false,
-			"{$this->ns}/languages/"
-		);
 	}
 
 }
