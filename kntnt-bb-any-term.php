@@ -5,13 +5,13 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Kntnt's Any Term for Beaver Builder Page Builder
- * Plugin URI:        https://www.kntnt.com/
+ * Plugin URI:        https://github.com/TBarregren/kntnt-bb-any-term
  * Description:       Adds special purpose term to every taxonomy (including categories and tags) that makes taxonomy filters in post modules of Beaver Builder Page Builder (e.g. Post Grid, Post Slider, Post Carousel) to match posts that has at least on term in that taxonomy in common with the post that the module appeares on. It can for instance be used to create reading recommendations at the end of a blog post.
  * Version:           1.0.0
  * Author:            Thomas Barregren
- * Author URI:        https://www.kntnt.com/
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Author URI:        https://www.kntnt.se/
+ * License:           GPLv3
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
  * Text Domain:       kntnt-bb-any-term
  * Domain Path:       /languages
  */
