@@ -1,4 +1,4 @@
-=== Any Term for Beaver Builder Page Builder ===
+=== Kntnt's Any Term for Beaver Builder Page Builder ===
 Contributors: TBarregren
 Tags: beaver builder,related posts,taxonomy,category,tags
 Requires at least: 4.4
