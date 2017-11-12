@@ -70,7 +70,7 @@ If you are familiar with Git, please do a pull request.
 
 1. Example of how the special purpose term Any term of the post can be used in the Post Grid module of Beaver Builder Page Builder plugin.
 
-![](assets/screenshoot-1.png)
+![](assets/screenshot-1.png)
 
 ## Changelog
 
