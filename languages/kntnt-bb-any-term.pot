@@ -1,0 +1,42 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-11 21:34+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: kntnt-bb-any-term.php:87
+msgid "Any term of the post"
+msgstr ""
+
+#. Name of the plugin
+msgid "Kntnt's Any Term for Beaver Builder Page Builder"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Adds special purpose term to every taxonomy (including categories and tags) "
+"that makes taxonomy filters in post modules of Beaver Builder Page Builder "
+"(e.g. Post Grid, Post Slider, Post Carousel) to match posts that has at "
+"least on term in that taxonomy in common with the post that the module "
+"appeares on. It can for instance be used to create reading recommendations "
+"at the end of a blog post."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.kntnt.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Thomas Barregren"
+msgstr ""
