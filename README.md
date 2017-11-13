@@ -66,13 +66,21 @@ If you are unfamiliar with Git, please post it as a new issue on the plugin's is
 
 If you are familiar with Git, please do a pull request.
 
-## Screenshoots
+## Screenshots
 
 1. Example of how the special purpose term Any term of the post can be used in the Post Grid module of Beaver Builder Page Builder plugin.
 
 ![](assets/screenshot-1.png)
 
 ## Changelog
+
+### 1.0.2
+
+Corrected the version number in the plugin file.
+
+### 1.0.1
+
+Fixed minor mistakes (e.g. spelling).
 
 ### 1.0.0
 
