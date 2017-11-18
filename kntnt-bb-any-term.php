@@ -7,7 +7,7 @@
  * Plugin Name:       Kntnt's Any Term for Beaver Builder Page Builder
  * Plugin URI:        https://github.com/TBarregren/kntnt-bb-any-term
  * Description:       Adds special purpose term to every taxonomy (including categories and tags) that makes taxonomy filters in post modules of Beaver Builder Page Builder (e.g. Post Grid, Post Slider, Post Carousel) to match posts that has at least on term in that taxonomy in common with the post that the module appeares on. It can for instance be used to create reading recommendations at the end of a blog post.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Thomas Barregren
  * Author URI:        https://www.kntnt.se/
  * License:           GPLv3
@@ -39,19 +39,22 @@ final class Plugin {
 	public function __construct() {
 
 		// Setup localization.
-		load_plugin_textdomain('kntnt-bb-any-term', false, 'languages');
+		load_plugin_textdomain( 'kntnt-bb-any-term', false, 'languages' );
 
 		// Make sure there is an "any term" in each public taxonomi.
 		add_action( 'init', [ $this, 'control_term_id' ] );
 
-		// Unhide "any term" before get_terms() is called to get terms that
-		// are suggested in Beaver Builder administrative interface.
-		add_action( 'fl_ajax_before_render_module_settings', [ $this, 'unhide_any_tag' ] );
-		add_action( 'fl_ajax_before_fl_builder_autosuggest', [ $this, 'unhide_any_tag' ] );
+		// Unhide "any term" when module settings are rendered.
+		if ( '1' === FL_BUILDER_VERSION[0] ) {
+			add_action( 'fl_ajax_before_render_module_settings', [ $this, 'unhide_any_tag' ] );
+			add_action( 'fl_ajax_after_render_module_settings', [ $this, 'hide_any_tag' ] );
+		} else {
+			add_action( 'fl_ajax_before_get_autosuggest_values', [ $this, 'unhide_any_tag' ] );
+			add_action( 'fl_ajax_after_get_autosuggest_values', [ $this, 'hide_any_tag' ] );
+		}
 
-		// Hide "any term" after get_terms() has been called to get terms that
-		// are suggested in Beaver Builder administrative interface.
-		add_action( 'fl_ajax_after_render_module_settings', [ $this, 'hide_any_tag' ] );
+		// Unhide "any term" for autosuggest.
+		add_action( 'fl_ajax_before_fl_builder_autosuggest', [ $this, 'unhide_any_tag' ] );
 		add_action( 'fl_ajax_after_fl_builder_autosuggest', [ $this, 'hide_any_tag' ] );
 
 		// Remove "any term" in all listings, except for Beaver Builder.
@@ -108,6 +111,7 @@ final class Plugin {
 				}
 			}
 		}
+
 		return $terms;
 	}
 
