@@ -68,11 +68,13 @@ If you are familiar with Git, please do a pull request.
 
 ## Screenshots
 
+Example of how the special purpose term `Any term of the post` can be used in the Post Grid module of Beaver Builder Page Builder plugin.
+
 ![](assets/screenshot-1.png)
+
 Example of how the special purpose term `Any term of the post` can be used in the Post Grid module of Beaver Builder Page Builder plugin.
 
 ![](assets/screenshot-2.png)
-Example of how the special purpose term `Any term of the post` can be used in the Post Grid module of Beaver Builder Page Builder plugin.
 
 ## Changelog
 
