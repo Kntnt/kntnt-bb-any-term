@@ -2,7 +2,7 @@
 Contributors: TBarregren
 Tags: beaver builder,related posts,taxonomy,category,tags
 Requires at least: 4.4
-Tested up to: 4.8.3
+Tested up to: 4.9
 Requires PHP: 7.0
 Stable tag: 1.0.3
 License: GPLv3
