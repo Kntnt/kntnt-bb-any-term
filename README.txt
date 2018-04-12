@@ -1,10 +1,10 @@
 === Kntnt's Any Term for Beaver Builder Page Builder ===
 Contributors: TBarregren
 Tags: beaver builder,related posts,taxonomy,category,tags
-Requires at least: 4.4
+Requires at least: 4.6
 Tested up to: 4.9
 Requires PHP: 7.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
