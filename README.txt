@@ -81,6 +81,10 @@ If you are familiar with Git, please do a pull request.
 
 == Changelog ==
 
+= 1.0.4 =
+
+Stricter control of database query that retrieves terms to see if it possible to remove any term (i.e. if `fields`is `all` or `ids`).
+
 = 1.0.3 =
 
 Added support for Beaver Builder Page Builder plugin version 2.x.

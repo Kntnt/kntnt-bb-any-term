@@ -97,14 +97,16 @@ final class Plugin {
 
 	// Hides "any term" in all listings, except for Beaver Builder.
 	public function remove_any_term( $terms, $taxonomies, $args, $term_query ) {
-		if ( $this->hide_any_term ) {
+	  $fields = $term_query->query_vars['fields'];
+		if ( $this->hide_any_term && ( 'all' == $fields || 'ids' == $fields ) ) {
 			foreach ( $terms as $i => $term ) {
-				if ( is_int( $term ) ) {
-					$tid = $term;
-					$tax = $taxonomies[0];
-				} else {
+				if ( 'all' == $fields ) {
 					$tid = $term->term_id;
 					$tax = $term->taxonomy;
+				}
+        else {
+          $tid = $term;
+					$tax = $taxonomies[0];
 				}
 				if ( isset( $this->tids[ $tax ] ) && $this->tids[ $tax ] == $tid ) {
 					unset( $terms[ $i ] );
