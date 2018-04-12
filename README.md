@@ -10,7 +10,7 @@ This WordPress plugin extends the functionality of both the [free](https://wordp
 
 When you configure a Page Builder module that allows you to filter posts based on category, tag or any other [taxonomy](https://codex.wordpress.org/Taxonomies), you will also find a special purpose term called `Any term of the post`. If you select it for a taxonomy, it will match posts that has at least on term in that taxonomy in common with the post that the module appears on. This is also true for pages and other [built in or custom post types](https://codex.wordpress.org/Post_Types).
 
-This can be used for instead to create reading recommendations at the end of a blog post. For an example, scroll down to the bottom of any article in [the online magazine of Word Trace Center in Malmö](https://www.wtcmalmo.se/magasinet/sex-tips-att-lyckas-internationellt/2599) (in Swedish).
+This can be used for instead to create reading recommendations at the end of a blog post. For an example, scroll down to the bottom of any article in [the online magazine of Word Trade Center in Malmö](https://www.wtcmalmo.se/magasinet/sex-tips-att-lyckas-internationellt/2599) (in Swedish).
 
 ### Detailed description
 
@@ -34,10 +34,6 @@ Install the plugin the [usually way](https://codex.wordpress.org/Managing_Plugin
 
 There is no setting page.
 
-### Does it work with Beaver Builder 2?
-
-I don't know. I have not yet test it with version 2 of Beaver Builder Page Builder. If you test, please let me know if it works or not.
-
 ### Does it work with PowerPack Addon for Beaver Builder?
 
 I don't know. I have not test it with either the [free](https://wordpress.org/plugins/ultimate-addons-for-beaver-builder-lite/) or [paid](https://wpbeaveraddons.com/) version of *PowerPack Addon for Beaver Builder*. If you test, please let me know if it works or not.
@@ -48,7 +44,7 @@ I don't know. I have not test it with either the [free](https://wordpress.org/pl
 
 ### Does it work with PHP 5?
 
-I don't know. I have not test it with PHP 5. If you test, please let me know if it works or not.
+I have not test it with PHP 5, but I don't think so.
 
 ### How can I get help?
 
