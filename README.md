@@ -1,4 +1,4 @@
-# Kntnt's Any Term for Beaver Builder Page Builder
+# Kntnt Any Term for Beaver Builder Page Builder
 
 WordPress plugin that adds special purpose term to every taxonomy (including categories and tags) that makes taxonomy filters in post modules of *Beaver Builder Page Builder* (e.g. *Post Grid*, *Post Slider*, *Post Carousel*) to match posts that has at least on term in that taxonomy in common with the post that the module appears on. It can for instance be used to create reading recommendations at the end of a blog post.
 
@@ -33,6 +33,10 @@ Install the plugin the [usually way](https://codex.wordpress.org/Managing_Plugin
 ### Where is the setting page?
 
 There is no setting page.
+
+### Does it work with WPML or Polylang.
+
+Yes.
 
 ### Does it work with PowerPack Addon for Beaver Builder?
 
